@@ -1,19 +1,14 @@
-@import "~/.cache/wal/colors-rofi-dark"
-
-*{
-  margin:0;
-  padding:0;
-}
 configuration{
-  show-icons: true;
-  font:"JetBrains Mono 18px";
+    modi: ["drun", "window", "run"];
+    icon-theme: "Papirus-Dark";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    sidebar-mode: false;
+    display-drun: " ";
+    display-run: " ";
+    display-window: " ";
 }
-window{
-  height:50%;
-  width:35%;
-}
-element-text {
- background-color: inherit;
- text-color: inherit;
-}
-
+@theme "tokyonight.rasi"

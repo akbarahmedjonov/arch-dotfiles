@@ -17,10 +17,9 @@
 This repository contains my **personal Arch Linux dotfiles**, designed for a clean, lightweight, and modern workflow.  
 All configs are organized using **GNU Stow** for easy management.
 
-Optimized for:
+My Laptop:
 - 💻 Intel Celeron N4020 + Intel UHD Graphics 600
 - ⚡ 8GB DDR4 2400MHz RAM
-- 🧠 Fast, minimal, and responsive setup  
 
 ---
 

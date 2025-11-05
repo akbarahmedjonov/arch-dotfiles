@@ -1,30 +1,30 @@
-<h1 align="center">🌿 Arch Dotfiles</h1>
+# 🌿 Arch Linux Dotfiles
 
 <p align="center">
-  <img src="https://img.shields.io/badge/System-Arch_Linux-1793D1?logo=arch-linux&logoColor=white">
-  <img src="https://img.shields.io/badge/Window_Manager-Hyprland-88C0D0?logo=wayland&logoColor=white">
-  <img src="https://img.shields.io/badge/Editor-Neovim-57A143?logo=neovim&logoColor=white">
-  <img src="https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white">
-  <img src="https://img.shields.io/badge/Status-Bar-Waybar-00B4D8?logo=gtk&logoColor=white">
+  <img src="screenshots/vscode%20and%20neovim.png" alt="VSCode & Neovim" width="400"/>
+  <img src="screenshots/Rofi.png" alt="Rofi Launcher" width="400"/>
+</p>
+<p align="center">
+  <img src="screenshots/notification-mako.png" alt="Mako Notifications" width="250"/>
+  <img src="screenshots/wallpaper%20selector.png" alt="Wallpaper Selector" width="250"/>
+  <img src="screenshots/waybar.png" alt="Waybar" width="250"/>
 </p>
 
 ---
 
-### 📂 Project Overview
+## 🧠 Overview
 
-This repository contains my **personal Arch Linux dotfiles**, managed with **GNU Stow** for easy setup and portability.  
-It includes configs for:
-- 🪟 **Hyprland** – Wayland compositor and window manager  
-- 🧠 **Neovim** – customized for coding and productivity  
-- 🐚 **Kitty** – lightweight GPU terminal with Gruvbox theme  
-- 📜 **Waybar** – clean and stylish top bar setup  
-- 🚀 **Fastfetch** – system info tool like Neofetch but faster  
-- 🔔 **Mako** – notification daemon  
-- 🎨 **Rofi** – launcher and app switcher with themed configs  
+This repository contains my **personal Arch Linux dotfiles**, designed for a clean, lightweight, and modern workflow.  
+All configs are organized using **GNU Stow** for easy management.
+
+Optimized for:
+- 💻 Intel Celeron N4020 + Intel UHD Graphics 600
+- ⚡ 8GB DDR4 2400MHz RAM
+- 🧠 Fast, minimal, and responsive setup  
 
 ---
 
-### 🧩 Folder Structure
+## 📂 Folder Structure
 
 ```bash
 arch-dotfiles/
@@ -34,5 +34,6 @@ arch-dotfiles/
 ├── mako/.config/mako/
 ├── nvim/.config/nvim/
 ├── rofi/.config/rofi/
-└── waybar/.config/waybar/
+├── waybar/.config/waybar/
+└── screenshots/
 

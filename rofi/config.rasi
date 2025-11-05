@@ -1,0 +1,19 @@
+@import "~/.cache/wal/colors-rofi-dark"
+
+*{
+  margin:0;
+  padding:0;
+}
+configuration{
+  show-icons: true;
+  font:"JetBrains Mono 18px";
+}
+window{
+  height:50%;
+  width:35%;
+}
+element-text {
+ background-color: inherit;
+ text-color: inherit;
+}
+

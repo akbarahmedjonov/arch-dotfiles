@@ -10,5 +10,22 @@ configuration{
     display-drun: " ";
     display-run: " ";
     display-window: " ";
+    
+    //adding vim keybindings
+    kb-row-up: "Up,Control+k";
+    kb-row-left: "Left,Control+h";
+    kb-row-right: "Right,Control+l";
+    kb-row-down: "Down,Control+j";
+
+    kb-accept-entry: "Control+z,Control+y,Return,KP_Enter";
+
+    //fixing up
+    kb-remove-to-eol: "";
+    kb-move-char-back: "Control+b";
+    kb-remove-char-back: "BackSpace";
+    kb-move-char-forward: "Control+f";
+    kb-mode-complete: "Control+o";
 }
-@theme "tokyonight.rasi"
+//@theme "tokyonight.rasi"
+
+@theme "/nix/store/7709w26jj56ym514bm5xlswwfjjx92ix-rofi-1.7.9/share/rofi/themes/gruvbox-dark-hard.rasi"

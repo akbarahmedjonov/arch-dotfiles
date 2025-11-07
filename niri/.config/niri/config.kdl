@@ -5,6 +5,8 @@ input {
         repeat-delay 200
         repeat-rate 35
         xkb {
+            layout "us,ru"
+            options "grp:alt_shift_toggle"
         }
         numlock
     }
@@ -28,7 +30,7 @@ input {
 
     trackpoint {
     }
-    focus-follows-mouse max-scroll-amount="0%"
+    focus-follows-mouse max-scroll-amount="100%"
 }
 
 // You can configure outputs by their name, which you can find
@@ -72,12 +74,12 @@ input {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
-    gaps 5
+    gaps 8
 
     center-focused-column "never"
 
     preset-column-widths {
-        proportion 0.33333
+        proportion 0.33334
         proportion 0.5
         proportion 0.66667
     }
@@ -86,9 +88,9 @@ layout {
     focus-ring {
         width 1.5
 
-        active-color "#7fc8ff"
+        active-color "#ebdbb2"
 
-        inactive-color "#505050"
+        inactive-color "#928374"
     }
 
     border {
@@ -115,8 +117,7 @@ layout {
 }
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
-spawn-at-startup "mako"
+spawn-at-startup "noctalia-shell"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -176,12 +177,13 @@ window-rule {
 }
 
 
-// workspace "" {
-//workspace "c" {
+//workspace "󰎈" {
 //}
-//workspace "b" {
+//workspace "󰦥" {
 //}
-//workspace "a" {
+//workspace "󰌠" {
+//}
+//workspace "󰈸" {
 //}
 
 window-rule {
@@ -205,15 +207,17 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 0
+    geometry-corner-radius 3
     clip-to-geometry true
 }
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "alacritty"; }
+    Mod+D { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+X { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
+    Mod+N { spawn "alacritty" "-e" "nvim"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Super+B hotkey-overlay-title="Browser : Firefox" { spawn "firefox"; }
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.

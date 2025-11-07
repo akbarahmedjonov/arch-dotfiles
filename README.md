@@ -1,15 +1,5 @@
 # 🌿 Arch Linux Dotfiles
 
-<p align="center">
-  <img src="screenshots/vscode%20and%20neovim.png" alt="VSCode & Neovim" width="400"/>
-  <img src="screenshots/Rofi.png" alt="Rofi Launcher" width="400"/>
-</p>
-<p align="center">
-  <img src="screenshots/notification-mako.png" alt="Mako Notifications" width="250"/>
-  <img src="screenshots/wallpaper%20selector.png" alt="Wallpaper Selector" width="250"/>
-  <img src="screenshots/waybar.png" alt="Waybar" width="250"/>
-</p>
-
 ---
 
 ## 🧠 Overview

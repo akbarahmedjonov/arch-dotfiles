@@ -1,4 +1,4 @@
-include=/home/akbar/.cache/wal/colors-mako
+include=/home/akbar/.config/mako/mako-colors
 
 anchor=top-right
 default-timeout=5000

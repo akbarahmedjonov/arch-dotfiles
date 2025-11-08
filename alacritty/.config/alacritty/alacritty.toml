@@ -1,0 +1,10 @@
+[general]
+import = ["/home/akbar/.config/alacritty/themes/custom.toml"]
+
+
+    [window]
+    padding = { x = 7 ,y = 7}
+    [font]
+    normal = { family = "JetBrainsMono Nerd Font Propo",style = "Normal"}
+    #size=12.0
+

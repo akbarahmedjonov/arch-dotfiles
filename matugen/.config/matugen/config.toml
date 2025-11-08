@@ -1,0 +1,28 @@
+[config.wallpaper]
+set = true
+
+command = "swww"
+
+arguments = ["img", "--transition-type", "center"]
+
+[templates.waybar]
+input_path = '/home/akbar/.config/matugen/templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'sh /home/akbar/.local/bin/waybar'
+
+[templates.alacritty]
+input_path = '/home/akbar/.config/matugen/templates/alacritty.toml'
+output_path = '~/.config/alacritty/themes/custom.toml'
+
+[templates.mako]
+input_path = '/home/akbar/.config/matugen/templates/mako'
+output_path = '~/.config/mako/mako-colors'
+post_hook = 'makoctl reload'
+
+[templates.fuzzel]
+input_path = '/home/akbar/.config/matugen/templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/fuzzel_theme.ini'
+
+[templates.rofi]
+input_path = '/home/akbar/.config/matugen/templates/colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'

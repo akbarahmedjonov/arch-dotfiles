@@ -24,13 +24,13 @@
         "backgroundOpacity": 1,
         "density": "default",
         "exclusive": true,
-        "floating": true,
+        "floating": false,
         "marginHorizontal": 0.1,
         "marginVertical": 0.1,
         "monitors": [
         ],
-        "outerCorners": false,
-        "position": "bottom",
+        "outerCorners": true,
+        "position": "left",
         "showCapsule": true,
         "widgets": {
             "center": [
@@ -77,7 +77,7 @@
             ],
             "right": [
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysShow",
                     "id": "Battery",
                     "warningThreshold": 30
                 },
@@ -98,11 +98,11 @@
                     "showUnreadBadge": true
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysShow",
                     "id": "Volume"
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysShow",
                     "id": "Brightness"
                 },
                 {
@@ -136,7 +136,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "matugenSchemeType": "scheme-neutral",
-        "predefinedScheme": "Gruvbox",
+        "predefinedScheme": "Kanagawa",
         "schedulingMode": "off",
         "useWallpaperColors": true
     },
@@ -333,7 +333,7 @@
             {
                 "directory": "/home/akbar/Pictures/Wallpapers/",
                 "name": "eDP-1",
-                "wallpaper": "/home/akbar/Pictures/Wallpapers/pine-watt-2Hzmz15wGik-unsplash.jpg"
+                "wallpaper": "/home/akbar/Pictures/Wallpapers/peak_into_the_system.png"
             }
         ],
         "overviewEnabled": false,

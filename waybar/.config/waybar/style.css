@@ -1,0 +1,43 @@
+@import "/home/akbar/.config/waybar/colors.css";
+* {
+    font-family: "JetBrainsMono NF", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 0;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: @background;
+    color: @foreground;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+#workspaces button {
+    padding: 0px 0px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused, #workspaces button.active {
+    color: @primary;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+#clock,
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#niri-language{
+    padding: 0 5px;
+    color: #ffffff;
+}
+

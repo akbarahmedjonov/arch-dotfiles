@@ -30,7 +30,7 @@ input {
 
     trackpoint {
     }
-    focus-follows-mouse max-scroll-amount="100%"
+    focus-follows-mouse max-scroll-amount="0%"
 }
 
 // You can configure outputs by their name, which you can find
@@ -69,6 +69,9 @@ input {
     // automatically.
     position x=1280 y=0
 }
+output "HDMI-A-1" {
+}
+
 
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
@@ -88,7 +91,7 @@ layout {
     focus-ring {
         width 1.5
 
-        active-color "#ebdbb2"
+        active-color "#ffffff"
 
         inactive-color "#928374"
     }
@@ -117,7 +120,9 @@ layout {
 }
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "noctalia-shell"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+spawn-at-startup "swww-daemon"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -146,13 +151,8 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // The wiki explains how to configure individual animations:
 // https://yalter.github.io/niri/Configuration:-Animations
 animations {
-    // Uncomment to turn off all animations.
-    // off
-
-    // Slow down all animations by this factor. Values below 1 speed them up instead.
-    // slowdown 3.0
+  
 }
-
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Window-Rules
@@ -175,48 +175,20 @@ window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
 }
-
-
-//workspace "󰎈" {
-//}
-//workspace "󰦥" {
-//}
-//workspace "󰌠" {
-//}
-//workspace "󰈸" {
-//}
-
 window-rule {
-    match title="Firefox"
-    open-on-workspace "c"
-    open-maximized true
-}
-
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
-}
-
-// Example: enable rounded corners for all windows.
-// (This example rule is commented out with a "/-" in front.)
-window-rule {
-    geometry-corner-radius 3
+    geometry-corner-radius 0
     clip-to-geometry true
 }
+
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "alacritty"; }
-    Mod+D { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Mod+X { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
+    Mod+D { spawn "fuzzel"; }
+    Mod+X { spawn "sh" "/home/akbar/.local/bin/fuzzel-powermenu"; }
+    Mod+M { spawn "sh" "/home/akbar/.local/bin/fuzzel-emoji"; }
+    Mod+Shift+W { spawn "sh" "/home/akbar/.local/bin/waybar"; }
     Mod+N { spawn "alacritty" "-e" "nvim"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Super+B hotkey-overlay-title="Browser : Firefox" { spawn "firefox"; }
